@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PantryApp"
+             x:Class="PantryApp.MainPage">
+    <StackLayout>
+        <Label Text="Welcome to My Pantry Pal!" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+        <Button Text="Add To My Pantry" Clicked="ToPantryAddPage"/>
+        <Button Text="View My Pantry" Clicked="OnPantryDetailPage"/>
+        <Button Text="TEST Tabbed Page" Clicked="ToTestTabbedPage"/>
+    </StackLayout>
+	
+</ContentPage>

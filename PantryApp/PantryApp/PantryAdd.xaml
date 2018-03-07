@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PantryApp.PantryAdd">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Add to My Pantry!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="SCAN" Clicked="ClickedButton"/>
+            <Button Text="Manual Add" Clicked="ToManualAdd"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
