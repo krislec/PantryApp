@@ -7,13 +7,13 @@ using Xamarin.Forms;
 
 namespace PantryApp
 {
-	public partial class MainPage : ContentPage
-	{
+    public partial class MainPage : ContentPage
+    {
         int count = 0;
         public MainPage()
-		{
-			InitializeComponent();
-		}
+        {
+            InitializeComponent();
+        }
 
         public void ClickedButton(object sender, EventArgs args)
         {
@@ -33,7 +33,7 @@ namespace PantryApp
             {
                 ((Button)sender).Text = EX.Message;
             }
-            
+
         }
 
         public async void ToPantryAddPage(object sender, EventArgs e)

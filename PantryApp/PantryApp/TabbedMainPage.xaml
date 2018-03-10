@@ -2,8 +2,37 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PantryApp.TabbedMainPage">
-  <!--Pages can be added as references or inline-->
-  <ContentPage Title="My Pantry" />
-  <ContentPage Title="My Recipes" />
-  <ContentPage Title="My Shopping List" />
+    <!--Pages can be added as references or inline-->
+    <ContentPage Title="My Pantry">
+        <StackLayout>
+            <Label Text="Green"  HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" Margin="5" />
+            <Button Text="Add To My Pantry" Clicked="ToPantryAddPage"/>
+            <Button Text="View My Pantry" Clicked="OnPantryDetailPage"/>
+            <BoxView Color="Green" VerticalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage>
+
+
+    <ContentPage Title="My Recipes">
+        <StackLayout>
+            <Label Text="Blue" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" Margin="5"  />
+            <BoxView Color="Blue" VerticalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage>
+
+
+    <ContentPage Title="My Shopping List" >
+        <StackLayout>
+            <Label Text="Magenta" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" Margin="5"  />
+            <BoxView Color="Magenta" VerticalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="TEST Add Tab" >
+        <StackLayout>
+            <Label Text="Yellow" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" Margin="5"  />
+            <BoxView Color="LightYellow" VerticalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage>
+
 </TabbedPage>

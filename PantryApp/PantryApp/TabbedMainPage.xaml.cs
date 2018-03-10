@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,44 @@ namespace PantryApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TabbedMainPage : TabbedPage
     {
-        public TabbedMainPage ()
+        public TabbedMainPage()
         {
             InitializeComponent();
         }
+
+
+        public async void ToPantryAddPage(object sender, EventArgs e)
+        {
+            try
+            {
+                await Navigation.PushAsync(new PantryAdd());
+            }
+            catch (Exception EX)
+            {
+                ((Button)sender).Text = EX.Message;
+            }
+
+        }
+
+        public async void OnPantryDetailPage(object sender, EventArgs e)
+        {
+            try
+            {
+                await Navigation.PushAsync(new PantryDetailPage());
+            }
+            catch (Exception EX)
+            {
+                ((Button)sender).Text = EX.Message;
+            }
+
+        }
+
+
+
+
+
+
     }
+
+
 }

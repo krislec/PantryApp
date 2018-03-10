@@ -7,9 +7,10 @@
         <Label Text="Welcome to My Pantry Pal!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-        <Button Text="Add To My Pantry" Clicked="ToPantryAddPage"/>
+        <Button Text="Add To My Pantry" Clicked="ToPantryAddPage" BorderColor="Yellow" TextColor="Green"/>
         <Button Text="View My Pantry" Clicked="OnPantryDetailPage"/>
         <Button Text="TEST Tabbed Page" Clicked="ToTestTabbedPage"/>
     </StackLayout>
-	
+
 </ContentPage>
+
